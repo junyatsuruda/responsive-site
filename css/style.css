@@ -1,13 +1,14 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Abel);
-/* Base
-------------------------------------------------------------*/
 
-.flexible-images
-{ 
-  width: 100%;
-  height: 500px;
-  margin: noting;
+
+p.sample1{
+    width: 100%;
+    height:500px;
+    margin: none;
+    background-image: url(lesson7-image.jpg);
+    background-size: cover;
+    
 }
 
 .text-center{
@@ -116,7 +117,11 @@
     border: solid 1px;
     margin :30px ;
 }
-    
+
+#button h2{
+    text-align: center;
+
+}
 
 
 @media (max-width: 768px) {
@@ -124,14 +129,15 @@
     flex-direction: column;
     margin-top: 10px;
   }
-  .flexible-images
-{ 
-  width: 100%;
-  height: 250px;
-  margin: noting;
+p.sample1{
+    flex-direction: column;
+    height: 250px;
 }
 
 #button p {
+    flex-direction: column;
+}
+#button h2{
     flex-direction: column;
 }
 }
